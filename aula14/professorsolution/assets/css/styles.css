@@ -1,0 +1,114 @@
+:root {
+  --color1: #d2a4d6;
+  --color2: #ec59e5;
+  --color3: #6359ec;
+  --white1: #f7f7f7;
+
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 0;
+}
+
+body,
+html {
+  height: 100vh;
+  background-color: var(--color3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+  align-items: center;
+
+  background-color: var(--white1);
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  gap: 5px;
+
+}
+
+input,
+button {
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color1);
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  background-color: var(--white1);
+  outline: 1px solid var(--color2);
+}
+
+button {
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color3);
+  color: white;
+}
+
+button:focus {
+  background-color: var(--white1);
+  color: var(--color3);
+}
+
+.msg-valida,.msg-invalida  {
+  padding: 10px;
+  width:  270px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.msg-invalida {
+  background-color: red;
+}
+
+.msg-valida {
+  background-color: green;
+}
