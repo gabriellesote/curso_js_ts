@@ -1,0 +1,62 @@
+:root {
+  --color1: #d2a4d6;
+  --color2: #b657b1;
+  --white1: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color1);
+}
+
+.container {
+  margin: 50px auto;
+  width: 50%;
+  background: var(--white1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+form input{
+  font-size: 18px;
+  height: 30px;
+  padding: 0 20px;
+}
+
+form input:focus{
+  outline: 1px solid var(--color1);
+}
+
+form button{
+  cursor: pointer;
+  height: 50px;
+  background-color: var(--color1);
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+form button:hover{
+background-color: var(--color2);
+}
+p{
+  font-size: 18px;
+  font-weight: 600;
+}

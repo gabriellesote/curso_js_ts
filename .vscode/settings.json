@@ -7,7 +7,16 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "README.md": true,
-    "modelo": true
+    "modelo": true,
+    "package-lock.json": true,
+    "aula1": true
   },
-  "hide-files.files": []
+  "hide-files.files": [
+    "package-lock.json",
+    "aula1",
+    "aula32/professorsolution/teste.js"
+  ],
+  "cSpell.enabledFileTypes": {
+    "javascript": true
+  }
 }

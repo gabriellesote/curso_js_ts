@@ -1,0 +1,68 @@
+
+:root {
+  --color1: #d2a4d6;
+  --color2: #b657b1;
+  --color3: #f079b4d5;
+  --white1: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: var(--color3);
+}
+
+h1{
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 50%;
+  background: var(--white1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.315);
+}
+
+
+.relogio{
+  font-size: 3rem;
+  margin: 20px;
+  color: black;
+}
+.pausado{
+  color: red;
+}
+
+button{
+  padding: 3px;
+  margin: 3px;
+  width: 90px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1124px) {
+  .container{
+    width: 70%;
+  }
+  button{
+    padding: 3px;
+    margin: 3px;
+    width: 4rem;
+    cursor: pointer;
+  }
+}
